@@ -1,0 +1,22 @@
+#main.js-screen
+    .main
+        .container
+            .main__inner
+                .main__wrap
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="assets/images/main_mobile.png">
+                        img(src="assets/images/main1.png", alt="")
+                    </picture>
+                .main__description
+                    .main__wrapper
+                        h2.main__title.title Вжух-вжух! Покажи осени, кто здесь хозяин!
+                        h3.main__subtitle.subtitle Акция на товары STIHL с 15.09.2019 по 15.11.2019
+                        span.main__text.text Купи бензопилу, воздуходувку STIHL в официальных дилерских магазинах
+                    .main__btn.js-popup
+                        a(href="#").main__button.button Купить
+        .main__leaf#parallax
+            img(src="assets/images/autumn_1.png", alt="" data-depth="0.6")
+        .main__leaf.main__leaf_bottom#parallax1
+            img(src="assets/images/autumn_2.png", alt="" data-depth="0.2")
+        .main__leaf.main__leaf_right#parallax2
+            img(src="assets/images/autumn_3.png", alt="" data-depth="0.2")

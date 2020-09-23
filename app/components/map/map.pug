@@ -1,0 +1,21 @@
+.map.js-map
+    .container.container_map
+        .map__inner#map-scroll
+            .map__title Найди официального дилера
+            .map__select.select
+                .select__item
+                    select(name="region" placeholder="Регион" id="region")
+                        option Регион
+                        option Регион2
+                        option Регион3
+                .select__item
+                    select(name="city" placeholder="Город" id="city")
+                        option Город
+                        option Город2
+                        option Город3
+            .map__body#map
+                script(src="https://api-maps.yandex.ru/2.1/?apikey=1a24e627-e2cc-4cdb-8d84-07080f530796&lang=ru_RU" type="text/javascript") 
+            a.map__up.up.js-nav-scrolling(href='#main')
+                .up__circle
+                    include ../../assets/images/icon-arrow.svg
+                .up__text Наверх

@@ -1,0 +1,40 @@
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 50%;
+    left: 2%;
+    z-index: 1000;
+    transform: translate3d(0,50%,0);
+    pointer-events: none;
+    @include media-breakpoint-down(tablet) {
+        display: none;
+    }
+    &__inner{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    &__nav{
+        margin: 4px 0;
+        cursor: pointer;
+        pointer-events: auto;
+        font-family: 'STIHL Contraface Text Demi', sans-serif;
+        font-size: 16px;
+        color: #2C343F;
+    }
+    &__body{
+        width: 2px;
+        height: 0px;
+        border-radius: 50%;
+        background-color: #000;
+        transition: height 0.3s linear 0s;
+        pointer-events: none;
+        margin: 11px auto;
+        position: relative;
+        &.active{
+            height: 116px;
+        }
+    }
+}

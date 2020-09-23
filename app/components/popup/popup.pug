@@ -1,0 +1,28 @@
+.popup#one-popup.mfp-hide
+    .popup__bg.js-popup-outside
+    .popup__inner
+        .popup__close.js-popup-close
+            span.popup__icon.popup__icon_left
+            span.popup__icon.popup__icon_right
+        .popup__content.js-content
+            .popup__feedback
+                h2.popup__title Оставьте заявку и получите подробную консультацию по продукции STIHL
+                p.popup__text Мы свяжемся с вами в ближайшее время
+                form.form.js-form(data-validate autocomplete="off")
+                    .form__field
+                        input(class="form__inp" type="text" name="name" required placeholder='Имя')
+                    .form__field
+                        input(class="form__inp js-input-phone" type="phone" name="feel" required placeholder='+7 (999) 999-99-99')
+                    .form__field
+                        input(class="form__inp" type="text" name="region" required placeholder='Регион')
+                    .form__field
+                        input(class="form__inp" type="text" name="city" required placeholder='Город')
+                    .form__btn
+                        button.form__submit.button Оставить заявку
+        .popup__content.popup__content_hide.js-success
+            .popup__feedback
+                .popup__wrap
+                    img(src="assets/images/done.png", alt="")
+                h2.popup__title Спасибо, ваша заявка принята!
+                p.popup__text Мы свяжемся с вами в ближайшее время
+                

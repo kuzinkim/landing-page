@@ -1,0 +1,90 @@
+.footer{
+    background-color: #fff;
+    &__inner{
+        padding-top: 72px;
+        padding-bottom: 46px;
+        @include media-breakpoint-down(tablet){
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media-breakpoint-down(tablet){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__item{
+        @include media-breakpoint-down(tablet){
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 30px 0;
+        }
+        &_hide{
+            @include media-breakpoint-down(tablet){
+                display: none;
+            }
+        }
+    }
+    &__logo{
+        background-color: transparent;
+        svg{
+            width: 200px;
+        }
+        @include media-breakpoint-down(tablet){
+            text-align: center;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+        .logo__item{
+            @include media-breakpoint-down(tablet){
+                margin-left: 0;
+            }
+        }
+    }
+    &__text{
+        max-width: 1000px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        color: #333333;
+        @include media-breakpoint-down(desktop){
+            max-width: 726px;
+        }
+        & > a{
+            color: #FF8800;
+            text-decoration: underline;
+        }
+        @include media-breakpoint-down(tablet){
+            font-size: 18px;
+        }
+        @include media-breakpoint-down(mobile){
+            font-size: 14px;
+        }
+    }
+    &__describe{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 45px;
+        display: block;
+        @include media-breakpoint-down(tablet){
+            font-size: 14px;
+        }
+        @include hover{
+            text-decoration: underline;
+        }
+    }
+}
+.footer-bottom{
+    display: none;
+    @include media-breakpoint-down(tablet){
+        display: flex;
+        justify-content: center;
+        background: #FF8800;
+    }
+}

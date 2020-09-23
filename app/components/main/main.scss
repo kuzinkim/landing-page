@@ -1,0 +1,114 @@
+.main{
+    margin-top: 55px;
+    position: relative; 
+    padding-bottom: 102px;
+    @include media-breakpoint-down(tablet) {
+        margin-bottom: 99px;
+        padding-bottom: 0;
+        margin-top: 16px;
+    }
+    &__title{
+        margin-bottom: 14px;
+        @include media-breakpoint-down(tablet) {
+            font-size: 36px;
+        }
+        &::after{
+            content: '';
+            width: 48px;
+            height: 11px;
+            background-color: #333333;
+            display: block;
+            margin: 17px 0 0 6px;
+            @include media-breakpoint-down(tablet) {
+                margin: 15px auto 0;
+            }
+        }
+    }
+    &__inner{
+        display: flex;
+        align-items: center; 
+        @include media-breakpoint-down(tablet) {
+            flex-direction: column;
+        }
+    }
+    &__description{
+        padding-right: 95px;
+        @include media-breakpoint-down(tablet) {
+            padding-right: 0;
+            text-align: center;
+        }
+        
+    }
+    &__wrap{
+        margin: 0 63px;
+        flex-shrink: 0;
+        @include media-breakpoint-down(desktop) {
+            max-width: 40%;
+            width: 100%;
+        }
+        @include media-breakpoint-down(tablet) {
+            margin: 0 20px;
+            max-width: 57%;
+        }
+        @include media-breakpoint-down(mobile) {
+            max-width: 57%;
+        }
+    }
+    &__wrapper{
+        @include media-breakpoint-down(tablet) {
+            margin: 10px 30px;
+        }
+    }
+    &__btn{
+        margin-top: 53px;
+    }
+    &__leaf{
+        position: absolute;
+        top: 108px;
+        right: 32px;
+        @include media-breakpoint-down(desktop) {
+            top: -55px;
+            right: -17px;
+        }
+        @include media-breakpoint-down(tablet) {
+            display: none;
+        }
+        &_bottom{
+            top: auto;
+            bottom: -70px;
+            left: 0;
+            @include media-breakpoint-down(desktop) {
+                left: -18%;
+            }
+            @include media-breakpoint-down(tablet) {
+                display: none;
+            }
+        }
+        &_right{
+            top: auto;
+            bottom: -191px;
+            right: -40px;
+            z-index: 1;
+            @include media-breakpoint-down(desktop) {
+                right: -20%;
+            }
+            @include media-breakpoint-down(tablet) {
+                display: none;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+.subtitle{
+    font-size: 30px;
+    color: #333333;
+    font-family: 'STIHL Contraface Text Demi', sans-serif;
+    @include media-breakpoint-down(tablet) {
+        font-family: 'STIHL Contraface Text', sans-serif;
+    }
+}
+.text{
+    display: block;
+    font-size: 20px;
+    color: #333333;
+}
